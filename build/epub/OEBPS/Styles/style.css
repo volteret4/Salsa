@@ -1,0 +1,106 @@
+/* ePub base r2.1 ePubLibre - style.css*/
+
+/*ESTILO DE PÁRRAFO POR DEFECTO
+Edite y habilite o deshabilite un estilo por defecto para el libro, o cree su propio estilo de párrafo personalizado que se adapte al mismo. Recuerde que afectará a todo el contenido, exceptuando las páginas que no enlacen este css (como las fijas). Tambien puede crear uno propio que se ajuste a sus necesidades. OJO: NO SE DEBE ASIGNAR UN TAMAÑO DE FUENTE POR DEFECTO PARA <p>, deje que el lector escoja el que le sea más comodo para la lectura. */
+/* El estilo por defecto es el de párrafo normal, apto para novelas, relatos, ensayos, etc.*/
+p {
+    margin: 0;
+    text-align: justify;
+    text-indent: 1.5em;
+    line-height: 125%;
+}
+
+/* Estilo de párrafo aleman o moderno. Apto para obras como manuales, obras de referencia, obras científicas o técnicas, etc.*/
+/*
+p { 
+	margin: 1em 0; 
+	text-align:justify; 
+	text-indent:0;
+	line-height: 125%;
+}
+*/
+/* ESTILOS GENERALES. PUEDE ADAPTARLOS O ELIMINARLOS SI NO LOS USA*/
+/* encabezados */
+h1 {
+    font-size: 1.5em;
+    margin: 20% 0 2em;
+}
+
+h2, h3 {
+    margin: 2em 0 1em;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+
+
+/* dedicatoria */
+.dedicatoria {
+    margin: 25% 3% 0 15%;
+    text-align: right;
+}
+
+.dedicatoria p {
+    text-align: right;
+    text-indent: 0;
+}
+
+/* saltos */
+
+
+
+
+
+.salto10 {
+    padding-top: 1em;
+}
+
+.salto25 {
+    padding-top: 2.5em;
+}
+
+/* El valor por defecto de <hr/> ahora es un espacio en blanco  para marcar saltos de contexto. Cambie la altura del mismo a su conveniencia  modificando el atributo height */
+hr {
+    height: 2.5em;
+}
+
+/* el siguiente par de clases son ejemplos de distintas variaciones para los saltos de contexto. Modifiquelos a su gusto */
+
+
+/* cambie la imagen de background a su gusto */
+/* imágenes simples */
+.ilustra {
+    margin: 1em 0;
+    text-align: center;
+    text-indent: 0;
+    display: block;
+}
+
+/* Control de silabeo. Asegurese de agregar cualquier estilo que no quiera que el e-reader divida con guiones, como los subtítulos, versos, etc. */
+.dedicatoria {
+    adobe-hyphenate: none;
+    -ms-hyphens: none;
+    -moz-hyphens: none;
+    -webkit-hyphens: none;
+    -epub-hyphens: none;
+    hyphens: none;
+}
+
+/* ESTILOS DE EJEMPLO PARA EL EPUB-BASE. ELIMINAR SI NO SE USAN */
+h1 + p, h2 + p, h3 + p, hr + p, blockquote + p, table + p {
+    text-indent: 0;
+}
+/* Equivale a aplicar el estilo .asangre a todas los párrafos que cumplan con las condiciones especificadas, por ejemplo los que van después de un título o salto de escena <hr>. Puede agregar otros estilos a la lista. */
+
+
+
+
+/*Estilos personales*/
+.capital { font-size:125%; font-weight:bold; float:left; margin:-0.1em 0.25% -0.2em 0; text-indent:0; line-height:1em; height:1em; font-style: italic;}
+.pie {display: block; font-family: serif; line-height: 1.2em; text-align: center; text-indent: 0; margin: 0;}
